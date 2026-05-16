@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.GenerateBillController"
+      alignment="CENTER"
+      spacing="20"
+      style="-fx-background-color:#111827;">
+
+    <padding>
+        <Insets top="25"
+                right="25"
+                bottom="25"
+                left="25"/>
+    </padding>
+
+    <Label text="Generate Electricity Bill"
+           style="-fx-font-size:24;
+                  -fx-font-weight:bold;
+                  -fx-text-fill:white;"/>
+
+    <TextField fx:id="unitsField"
+               promptText="Enter Units Consumed"
+               prefWidth="250"/>
+
+    <Button text="Generate"
+            onAction="#generate"
+            prefWidth="200"
+            style="-fx-background-color:#2563eb;
+                   -fx-text-fill:white;
+                   -fx-font-size:16;"/>
+
+    <TextArea fx:id="resultArea"
+              prefWidth="350"
+              prefHeight="180"
+              editable="false"/>
+
+</VBox>

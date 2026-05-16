@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.RegisterController"
+      alignment="CENTER"
+      spacing="15"
+      styleClass="main-box">
+
+    <padding>
+        <Insets top="20"
+                right="20"
+                bottom="20"
+                left="20"/>
+    </padding>
+
+    <Label text="Create New Consumer"
+           styleClass="title"/>
+
+    <TextField fx:id="nameField"
+               promptText="Enter Name"/>
+
+    <TextField fx:id="addressField"
+               promptText="Enter Address"/>
+
+    <ComboBox fx:id="categoryBox"
+              prefWidth="250"
+              promptText="Select Category"/>
+
+    <TextField fx:id="phaseField"
+               promptText="Enter Phase"/>
+
+    <TextField fx:id="loadField"
+               promptText="Enter Load"/>
+
+    <Button text="Create Account"
+            styleClass="main-button"
+            onAction="#createConsumer"/>
+
+</VBox>

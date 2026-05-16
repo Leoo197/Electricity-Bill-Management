@@ -1,0 +1,42 @@
+.root {
+    -fx-font-family: Arial;
+}
+
+.main-box {
+
+    -fx-background-color:
+            linear-gradient(
+                    to bottom right,
+                    #0f172a,
+                    #1e293b
+            );
+}
+
+.title {
+
+    -fx-font-size: 30px;
+
+    -fx-text-fill: white;
+
+    -fx-font-weight: bold;
+}
+
+.main-button {
+
+    -fx-background-color: #2563eb;
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 16px;
+
+    -fx-pref-width: 220px;
+
+    -fx-pref-height: 45px;
+
+    -fx-background-radius: 10px;
+}
+
+.main-button:hover {
+
+    -fx-background-color: #1d4ed8;
+}
